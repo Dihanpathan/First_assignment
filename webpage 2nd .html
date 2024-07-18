@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mico Hospital</title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+        header {
+            background: #00a99d;
+            padding: 10px 0;
+            color: white;
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .contact-info {
+            display: flex;
+            align-items: center;
+        }
+        header .contact-info div {
+            margin-right: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .main-content h1 {
+            font-size: 36px;
+            color: #00a99d;
+        }
+        .main-content p {
+            color: #666;
+            margin: 20px 0;
+        }
+        .main-content button {
+            background: #00a99d;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .appointment-section {
+            background: #f9f9f9;
+            padding: 50px 20px;
+        }
+        .appointment-section h2 {
+            text-align: center;
+            color: #00a99d;
+        }
+        .appointment-section form {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .appointment-section form input,
+        .appointment-section form select,
+        .appointment-section form button {
+            width: calc(50% - 10px);
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .appointment-section form button {
+            background: #00a99d;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #00a99d;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="contact-info">
+                <div>Call: +011234567890</div>
+                <div>Email: demo@gmail.com</div>
+                <div>Location</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">TREATMENT</a></li>
+                    <li><a href="#">DOCTORS</a></li>
+                    <li><a href="#">TESTIMONIAL</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">SIGN UP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <div class="container">
+            <h1>MICO HOSPITAL</h1>
+            <p>When looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to.</p>
+            <button>Contact Us</button>
+            <img src="C:\Users\dihan\OneDrive\Desktop\BA assignment]\Asssignment\images\slider-img.jpg" alt="Hospital Image" width="600">
+        </div>
+    </div>
+
+    <div class="appointment-section">
+        <div class="container">
+            <h2>Book Appointment</h2>
+            <form action="#">
+                <input type="text" name="patient_name" placeholder="Patient Name" required>
+                <input type="text" name="doctor_name" placeholder="Doctor's Name" required>
+                <input type="text" name="department_name" placeholder="Department's Name" required>
+                <input type="text" name="phone_number" placeholder="Phone Number" required>
+                <input type="text" name="symptoms" placeholder="Symptoms" required>
+                <input type="date" name="date" placeholder="Choose Date" required>
+                <button type="submit">Submit Now</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p></p>
+    </div>
+</body>
+</html>
